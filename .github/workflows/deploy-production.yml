@@ -37,7 +37,7 @@ jobs:
         with:
           target-server: 217.196.55.174
           remote-user: u222328741
-          private-ssh-key: ${{ secrets.SSH_KEY }}
+          private-ssh-key: ${{ secrets.SHH_KEY }}
           ssh-port: 65002
 
           # Deploy the full theme
