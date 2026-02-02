@@ -13,7 +13,7 @@ jobs:
     steps:
       # Checkout repo
       - name: 🚚 Get Latest Code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
     #   # Setup Node
     #   - name: Setup Node
@@ -37,7 +37,7 @@ jobs:
         with:
           target-server: 217.196.55.174
           remote-user: u222328741
-          private-ssh-key: ${{ secrets.SHH_KEY }}
+          private-ssh-key: ${{ secrets.SSH_KEY }}
           ssh-port: 65002
 
           # Deploy the full theme
