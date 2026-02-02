@@ -9,7 +9,8 @@ jobs:
   web-deploy:
     name: 🚀 Deploy Website Every Commit
     runs-on: ubuntu-latest
-
+    
+    
     steps:
       # Checkout repo
       - name: 🚚 Get Latest Code
