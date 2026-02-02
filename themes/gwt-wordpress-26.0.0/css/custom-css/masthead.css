@@ -1,0 +1,66 @@
+ .masthead-h5{
+        font-size: .825rem ;
+    }
+    .masthead-h3 {
+        font-size: 1rem; /* md and up */
+    }
+    .masthead-h1 {
+        font-size: 1.25rem; /* md and up */
+    }
+
+.dashicons-youtube, .dashicons-instagram, .dashicons-facebook{
+    color: white;
+}
+
+#masthead-container-right{
+    background-color: green;
+}
+
+.ph-standard-time-text{
+    color: white;
+}
+.realtime-text{
+    color: #E79D11;
+}
+.gold-text{
+    color: #E79D11;
+}
+@media (min-width: 768px) {
+    .masthead-h5 {
+        font-size: 2rem; /* md and up */
+    }
+    .masthead-h3 {
+        font-size: 2rem; /* md and up */
+    }
+    #masthead-container-right{
+    background-color: transparent;
+}
+.ph-standard-time-text{
+    color: black;
+}
+
+.realtime-text{
+    color: green;
+}
+}
+
+@media (min-width: 992px) {
+    .dashicons-facebook{
+    color: blue;
+     }
+    .dashicons-instagram{
+    color: black;
+}
+.dashicons-youtube{
+    color: red;
+}
+    .masthead-h5{
+        font-size: 1.25rem ;
+    }
+    .masthead-h3 {
+        font-size: 1.5rem; /* md and up */
+    }
+    .masthead-h1 {
+        font-size: 2rem; /* md and up */
+    }
+}

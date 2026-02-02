@@ -1,0 +1,20 @@
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: none;  /* remove uppercase */
+}
+
+.footer-links{
+    color: rgb(237, 231, 231);
+}
+
+.--footer-links{
+    color: rgb(237, 231, 231);
+}
+
+.footer-links:hover{
+    color: goldenrod;
+}
+
+.--footer-links:hover{
+    color: rgb(77, 77, 76);
+}
