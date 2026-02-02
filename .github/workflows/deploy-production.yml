@@ -1,0 +1,48 @@
+name: Publish Website
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  web-deploy:
+    name: 🚀 Deploy Website Every Commit
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout repo
+      - name: 🚚 Get Latest Code
+        uses: actions/checkout@v3
+
+    #   # Setup Node
+    #   - name: Setup Node
+    #     uses: actions/setup-node@v3
+    #     with:
+    #       node-version: "22.19.0"
+
+    #   # Install dependencies
+    #   - name: Install Dependencies
+    #     working-directory: themes/iflex-theme
+    #     run: npm install
+
+    #   # Build theme assets
+    #   - name: Build Theme
+    #     working-directory: themes/gwt-wordpress-26.0.0
+    #     run: npm run build
+
+      # Deploy FULL THEME (PHP + dist) but EXCLUDE node_modules & dev files
+      - name: 📂 Sync Files
+        uses: SamKirkland/web-deploy@v1
+        with:
+          target-server: 217.196.55.174
+          remote-user: u222328741
+          private-ssh-key: ${{ secrets.SSH_KEY }}
+          ssh-port: 65002
+
+          # Deploy the full theme
+          source-path: themes/gwt-wordpress-26.0.0
+
+          # Deploy to theme directory
+          destination-path: /home/u222328741/domains/https://darkslategray-kingfisher-643992.hostingersite.com/public_html/wp-content/themes
+          
