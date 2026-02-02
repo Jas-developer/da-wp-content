@@ -44,5 +44,5 @@ jobs:
           source-path: themes/gwt-wordpress-26.0.0
 
           # Deploy to theme directory
-          destination-path: /home/u222328741/domains/https://darkslategray-kingfisher-643992.hostingersite.com/public_html/wp-content/themes
+          destination-path: /home/u222328741/domains/darkslategray-kingfisher-643992.hostingersite.com/public_html/wp-content/themes
           
