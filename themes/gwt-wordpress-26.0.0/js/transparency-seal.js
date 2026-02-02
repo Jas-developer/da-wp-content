@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded',() => {
     //parent
     const sealContentWrapper = document.getElementById('seal-content-wrapper');
-    console.log('the workflow work');
+    console.log('the workflow workS');
     /*
      #unhide list if title is clicked
      #only hide list with similar data id to targeted element
