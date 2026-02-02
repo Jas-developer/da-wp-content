@@ -13,7 +13,7 @@ jobs:
     steps:
       # Checkout repo
       - name: 🚚 Get Latest Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
     #   # Setup Node
     #   - name: Setup Node
@@ -44,5 +44,5 @@ jobs:
           source-path: themes/gwt-wordpress-26.0.0
 
           # Deploy to theme directory
-          destination-path: darkslategray-kingfisher-643992.hostingersite.com/public_html/wp-content/themes
+          destination-path: /home/u222328741/domains/darkslategray-kingfisher-643992.hostingersite.com/public_html/wp-content/themes
           
