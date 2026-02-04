@@ -21,6 +21,6 @@ jobs:
           username: u222328741
           key: ${{ secrets.SSH_KEY }}
           port: 65002
-          source: "themes/gwt-wordpress-26.0.0/*"
-          target: "/home/u222328741/domains/darkslategray-kingfisher-643992.hostingersite.com/public_html/wp-content/themes/"
-          strip_components: 1
+          source: "wp-content/mu-plugins/*"
+          target: "/home/u222328741/domains/darkslategray-kingfisher-643992.hostingersite.com/public_html/wp-content/mu-plugins"
+          strip_components: 2
