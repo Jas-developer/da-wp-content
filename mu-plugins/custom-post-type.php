@@ -12,7 +12,25 @@ if ( ! defined( 'ABSPATH' ) ) {
 add_action('init','register_cpt');
 
 function register_cpt(){
-    
+
+   //FOR JOB OPPORTUNITIES   
+   register_post_type('job-opportunities', array(
+    'labels' => array(
+        'name' => 'Job Opportunities',
+        'singular_name' => 'Job Opportunity',
+        'add_new' => 'Add Job',
+        'edit_item' => 'Edit JOB',
+        'add_new_item' => 'Add New Job',
+        'view_item' => 'View Job',
+        'menu_name' => 'Job Opportunity',
+        ),
+    'public' => true,
+    'supports' => ['title']
+   ));
+
+
+
+    // FOR TRANSPARENCY SEALS
     $labels = array(
         'name'               => 'Transparency Seals',
         'singular_name'      => 'Transparency Seal',
@@ -35,4 +53,6 @@ function register_cpt(){
     );
 
     register_post_type( 'transparency', $args );
+
+
 }
